@@ -1,7 +1,6 @@
 # AirBnB_clone - The console
 ## Welcome to the AirBnB clone project!
 ### Resources
-**Read or watch:**
 * [cmd module](https://docs.python.org/3.8/library/cmd.html)
 * [uuid module](https://docs.python.org/3.8/library/uuid.html)
 * [datetime](https://docs.python.org/3.8/library/datetime.html)
@@ -112,3 +111,27 @@ And
 ```
 python3 -c 'print(__import__("my_module").MyClass.my_function.__doc__)'
 ```
+## Usage
+* Starting the console in interactive mode:
+```
+$ ./console.py
+(hbnb)
+```
+* Using `help` to see available commands:
+```
+(hbnb) help
+
+Documented commands (type help <topic>):
+========================================
+EOF  all  count  create  destroy  help  quit  show  update
+
+(hbnb)
+```
+* Quitting the console:
+```
+(hbnb) quit
+$
+```
+## Authors
+- [Uduak Umanah](https://github.com/Eyakenojnr/)
+- [Uniquexcel](https://github.com/Uniquexcel)
