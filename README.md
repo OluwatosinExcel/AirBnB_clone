@@ -18,6 +18,41 @@ Command interpreter serves as a means to manipulate data without visual interfac
 - Do operations on objects (e.g count, compute stats, etc.)
 - Update attributes of an object
 - Destroy an object
-### How to start it:
-### How to use it:
-### Example:
+### Execution
+* In interactive mode:
+```
+$ ./console.py
+(hbnb) help
+
+Documented commands (type help <topic>):
+========================================
+EOF  help  quit
+
+(hbnb)
+(hbnb)
+(hbnb) quit
+$
+```
+* In non-interactive mode:
+```
+$ echo "help" | ./console.py
+(hbnb)
+
+Documented commands (type help <topic>):
+========================================
+EOF  help  quit
+(hbnb) 
+$
+$ cat test_help
+help
+$
+$ cat test_help | ./console.py
+(hbnb)
+
+Documented commands (type help <topic>):
+========================================
+EOF  help  quit
+(hbnb) 
+$
+```
+* All the tests passed `$ echo "python3 -m unittest discover tests" | bash` in non-interactive mode.
